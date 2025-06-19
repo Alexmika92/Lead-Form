@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lead Capture Form</title>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 300px;
+      padding: 5px;
+    }
+    textarea {
+      height: 80px;
+    }
+    input[type="submit"] {
+      width: auto;
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lead Capture Form</h2>
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D4T000000FwMI" method="POST">
+
+    <input type="hidden" name="oid" value="00D4T000000FwMI">
+    <input type="hidden" name="retURL" value="http://www.mpxinsurance.com">
+
+    <!-- Optional Debug Fields -->
+    <!--
+    <input type="hidden" name="debug" value="1">
+    <input type="hidden" name="debugEmail" value="alex@mpxinsurance.com">
+    -->
+
+    <label for="first_name">First Name</label>
+    <input id="first_name" maxlength="40" name="first_name" type="text">
+
+    <label for="last_name">Last Name</label>
+    <input id="last_name" maxlength="80" name="last_name" type="text">
+
+    <label for="street">Street</label>
+    <textarea name="street"></textarea>
+
+    <label>CustomState</label>
+    <input id="00N4T000006kWDt" maxlength="80" name="00N4T000006kWDt" type="text">
+
+    <label>CustomPostalCode</label>
+    <input id="00N4T000006kWDy" maxlength="20" name="00N4T000006kWDy" type="text">
+
+    <label>Daytime Phone</label>
+    <input id="00N4T0000051F95" maxlength="40" name="00N4T0000051F95" type="text">
+
+    <label for="email">Email</label>
+    <input id="email" maxlength="80" name="email" type="text">
+
+    <label>Applicant DOB</label>
+    <input id="00N4T0000051F8o" name="00N4T0000051F8o" size="12" type="text">
+
+    <label for="00N4T0000051F93">Currently Insured</label>
+    <select id="00N4T0000051F93" name="00N4T0000051F93" title="Currently Insured">
+      <option value="">--None--</option>
+      <option value="No">No</option>
+      <option value="Yes">Yes</option>
+    </select>
+
+    <label>Policy Expires</label>
+    <input id="00N4T0000051F9f" name="00N4T0000051F9f" size="12" type="text">
+
+    <label>Current Provider</label>
+    <input id="00N4T0000051F92" maxlength="255" name="00N4T0000051F92" type="text">
+
+    <label>Property Type</label>
+    <input id="00N4T0000051F9h" maxlength="255" name="00N4T0000051F9h" type="text">
+
+    <label>Occupancy Status</label>
+    <input id="00N4T0000051F9c" maxlength="255" name="00N4T0000051F9c" type="text">
+
+    <label>Garage Type</label>
+    <input id="00N4T0000051F9T" maxlength="255" name="00N4T0000051F9T" type="text">
+
+    <label>Foundation Type</label>
+    <input id="00N4T0000051F9R" maxlength="255" name="00N4T0000051F9R" type="text">
+
+    <label>Security System</label>
+    <input id="00N4T0000051F9m" maxlength="255" name="00N4T0000051F9m" type="text">
+
+    <label>Year Built</label>
+    <input id="00N4T0000051F9s" name="00N4T0000051F9s" type="text">
+
+    <label>Number of Floors</label>
+    <input id="00N4T0000051F9a" name="00N4T0000051F9a" type="text">
+
+    <label>Number of Bedrooms</label>
+    <input id="00N4T0000051F9Z" name="00N4T0000051F9Z" type="text">
+
+    <label>Number of Bathrooms</label>
+    <input id="00N4T0000051F9Y" name="00N4T0000051F9Y" type="text">
+
+    <label>Square Feet</label>
+    <input id="00N4T0000051F9n" name="00N4T0000051F9n" type="text">
+
+    <label>Construction Type</label>
+    <input id="00N4T0000051F8v" maxlength="255" name="00N4T0000051F8v" type="text">
+
+    <label>Roof Type</label>
+    <input id="00N4T0000051F9j" maxlength="255" name="00N4T0000051F9j" type="text">
+
+    <label>Claims</label>
+    <textarea id="00N4T0000051F8t" name="00N4T0000051F8t" rows="3" wrap="soft"></textarea>
+
+    <label>Liability Amount</label>
+    <input id="00N4T0000051F9W" name="00N4T0000051F9W" type="text">
+
+    <label>Deductible</label>
+    <input id="00N4T0000051F96" name="00N4T0000051F96" type="text">
+
+    <label>Credit Standing</label>
+    <input id="00N4T0000051WTr" maxlength="255" name="00N4T0000051WTr" type="text">
+
+    <label>Lead URL - SF</label>
+    <input id="00NRb000009JXZO" maxlength="255" name="00NRb000009JXZO" type="text">
+
+    <input type="submit" name="submit" value="Submit Lead">
+
+  </form>
+
+</body>
+</html>
